@@ -38,7 +38,7 @@ echo "If prompted, just hit Enter"
 echo
 echo "Unpacking firefly-iii project"
 echo
-sudo composer create-project ryanhind/firefly-iii --no-dev --prefer-dist firefly-iii 5.7.12
+sudo composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 5.7.12
 # This will stop the  white screen issue
 # Changing firefly-iii folder permissions
 sudo chown -R www-data:www-data firefly-iii
@@ -46,7 +46,7 @@ sudo chmod -R 775 firefly-iii/storage
 echo
 echo "Unpacking data importer for firefly-iii"
 echo
-sudo composer create-project ryanhind/data-importer --no-dev --prefer-dist data-importer 0.9.16
+sudo composer create-project firefly-iii/data-importer --no-dev --prefer-dist data-importer 0.9.16
 sudo chown -R www-data:www-data data-importer
 sudo chmod -R 775 data-importer/storage
 sudo cp firefly-iii/data-importer/.env.example .env
